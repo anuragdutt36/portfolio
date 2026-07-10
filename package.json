@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://anuragdutt36.github.io/portfolio",
   "scripts": {
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "dev": "vite"
   },
