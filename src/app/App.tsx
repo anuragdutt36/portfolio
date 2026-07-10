@@ -620,7 +620,7 @@ function ContactSection() {
                 <div className="w-9 h-9 rounded-lg flex items-center justify-center border border-border group-hover:border-[#d4844a]/40 group-hover:bg-[#d4844a]/5 transition-all">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-sm">anuragdutt135790@outlook.com</span>
+                <span className="text-sm">outlook.com/anuragdutt135790</span>
               </a>
               <a
                 href="https://github.com/anuragdutt36"
