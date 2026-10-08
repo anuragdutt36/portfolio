@@ -12,6 +12,7 @@ import {
   Layers,
   Zap,
   Globe,
+  Phone,
 } from "lucide-react";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import profilePic from "@/imports/Profile_Pic.jpg";
@@ -23,60 +24,60 @@ const NAV_LINKS = [
 ];
 
 const SKILLS = [
-  "Figma",
-  "User Research",
-  "Wireframing",
-  "High-Fidelity Prototyping",
-  "Design Systems",
-  "Interaction Design",
-  "Information Architecture",
-  "Usability Testing",
-  "UX Writing",
-  "Visual Design",
-  "React",
-  "TailwindCSS",
-  "HTML & CSS",
-  "User Journeys",
-  "A/B Testing",
+  "JavaScript (ES6+)",
+  "Java",
+  "Python",
+  "C",
+  "HTML5",
+  "CSS3",
+  "React.js",
+  "Tailwind CSS",
+  "DaisyUI",
+  "Context API",
+  "Zustand",
+  "Recharts",
+  "Node.js",
+  "Express.js",
+  "Socket.io",
+  "RESTful APIs",
+  "WebSockets",
+  "MongoDB",
+  "MongoDB Atlas",
+  "Mongoose",
+  "IBM Cloud",
+  "Cloudinary",
   "Git",
+  "GitHub",
+  "Postman",
+  "Jest",
+  "Supertest",
+  "JWT",
+  "OAuth 2.0",
+  "Prompt Engineering",
+  "Data Structures & Algorithms (DSA)",
+  "System Design (LLD/HLD)",
+  "RBAC",
+  "Multi-Tenant SaaS",
 ];
 
 const PROJECTS = [
   {
-    title: "NovaPay — Fintech Checkout Experience",
+    title: "Acadexa – Academic Feedback & Evaluation Platform",
     description:
-      "Redesigned the payment and checkout flows for a global fintech platform. Conducted extensive user testing to streamline transaction entry, reducing cart abandonment and checkout friction.",
-    tags: ["Interaction Design", "User Testing", "Figma", "Information Architecture"],
+      "Engineered a multi-tenant SaaS feedback platform on the MERN stack automating student evaluations across 7 instructional metrics. Implemented an identity-decoupling anonymity pipeline separating transaction completion tokens from feedback rating payloads. Constructed context-injection middleware enforcing tenant query boundaries (institutionId), preventing cross-tenant leakage across 14 collections. Configured a 6-tier Role-Based Access Control (RBAC) hierarchy secured via JWT authentication and Google OAuth 2.0. Implemented dynamic score computation engines evaluating the Overall Faculty Evaluation Index (OFEI) with visual analytics.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
     icon: <Zap className="w-5 h-5" />,
     gradient: "from-[#d4844a]/20 to-[#8b4513]/5",
     accentColor: "#d4844a",
   },
   {
-    title: "Orion — Multi-brand Design System",
+    title: "Real-Time Chat Application",
     description:
-      "Architected a scalable, token-based design system in Figma and React. Designed 80+ accessibility-compliant components, streamlining design-to-development handoff across multiple teams.",
-    tags: ["Design Systems", "Figma Tokens", "Accessibility", "React"],
+      "Architected an instant messaging application using Socket.io for persistent, bidirectional communication. Integrated live user presence and online/offline status synchronisation across clients using Socket.io and React Context API. Utilized Zustand for centralized client state management, optimizing rendering cycles and state persistence across active chats. Secured client-server communication using JSON Web Tokens (JWT) and encrypted password hashing pipelines. Built a responsive UI utilizing Tailwind CSS and DaisyUI, supporting organized multi-participant conversation schemas.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io", "Zustand"],
     icon: <Layers className="w-5 h-5" />,
     gradient: "from-[#a0522d]/20 to-[#6b3520]/5",
     accentColor: "#a0522d",
-  },
-  {
-    title: "CodeScope — AI Coding Assistant Interface",
-    description:
-      "Designed the user experience and workspace interface for an AI-powered code analysis tool. Conducted developer research to build a layout that displays recommendations intuitively.",
-    tags: ["Product Design", "AI UX", "Heuristic Evaluation", "Wireframing"],
-    icon: <Code2 className="w-5 h-5" />,
-    gradient: "from-[#e8a87c]/20 to-[#a0522d]/5",
-    accentColor: "#e8a87c",
-  },
-  {
-    title: "Wandr — Collaborative Travel Planner",
-    description:
-      "Designed a mobile-first travel planning app from initial research to high-fidelity interactive prototype. Created collaborative trip-building tools and a map-integrated itinerary builder.",
-    tags: ["Mobile UX", "User Journeys", "Interactive Prototyping", "User Research"],
-    icon: <Globe className="w-5 h-5" />,
-    gradient: "from-[#c47a3a]/20 to-[#7c3d1f]/5",
-    accentColor: "#c47a3a",
   },
 ];
 
@@ -192,7 +193,7 @@ function HeroSection() {
               style={{ fontFamily: "JetBrains Mono, monospace" }}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#d4844a] animate-pulse" />
-              OPEN TO COLLABORATION
+              OPEN TO ENTRY-LEVEL SOFTWARE DEVELOPMENT ROLES
             </div>
 
             <h1
@@ -201,7 +202,7 @@ function HeroSection() {
             >
               Hi, I&apos;m{" "}
               <span
-                className="block pb-2" // <-- Added pb-3 (padding-bottom)
+                className="block pb-2"
                 style={{
                   background:
                     "linear-gradient(135deg, #d4844a 0%, #a0522d 100%)",
@@ -218,11 +219,10 @@ function HeroSection() {
               className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-lg"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Product designer crafting{" "}
               <span className="text-[#d4844a] font-medium">
-                thoughtful, intuitive
+                Aspiring Software Engineer
               </span>{" "}
-              digital experiences — blending human-centered design with interactive prototyping.
+              | MERN Stack & Backend API Engineering
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -235,7 +235,7 @@ function HeroSection() {
                 className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-[#0f0a07] bg-[#d4844a] hover:bg-[#d4844a]/90 transition-all duration-200 shadow-[0_0_30px_rgba(212,132,74,0.35)] hover:shadow-[0_0_50px_rgba(212,132,74,0.55)] text-sm"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Explore Case Studies
+                Explore Projects
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
               <button
@@ -247,15 +247,15 @@ function HeroSection() {
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-foreground border border-[#a0522d]/50 hover:border-[#a0522d] hover:bg-[#a0522d]/10 transition-all duration-200 text-sm"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Let&apos;s Collaborate
+                Contact Me
               </button>
             </div>
 
             <div className="flex items-center gap-6 mt-12">
               {[
-                { label: "Case Studies", value: "15+" },
-                { label: "Years Exp.", value: "4+" },
-                { label: "Brands Shaped", value: "12" },
+                { label: "LeetCode Solved", value: "300+" },
+                { label: "MCA Cohort Rank", value: "Top 5" },
+                { label: "Hackathon Award", value: "Winner" },
               ].map((s) => (
                 <div key={s.label}>
                   <div
@@ -291,7 +291,7 @@ function HeroSection() {
                 <div className="w-full h-full rounded-full overflow-hidden bg-[#1a1109]">
                   <ImageWithFallback
                     src={profilePic}
-                    alt="Anurag Dutt — Full-stack engineer"
+                    alt="Anurag Dutt — Aspiring Software Engineer"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -302,7 +302,7 @@ function HeroSection() {
                 style={{ fontFamily: "JetBrains Mono, monospace" }}
               >
                 <span className="text-[#a0522d] text-xs font-medium">
-                  ✦ Product Designer
+                  ✦ Aspiring Software Engineer
                 </span>
               </div>
             </div>
@@ -353,51 +353,20 @@ function AboutSection() {
               className="text-foreground/90 text-base leading-7"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              I&apos;m an aspiring product designer and a current MCA 2nd-year student passionate about crafting user-centered interfaces and digital experiences. My design practice is anchored at the intersection of{" "}
-              <span className="text-[#d4844a] font-medium">
-                empathy-led research
-              </span>{" "}
-              and{" "}
-              <span className="text-[#a0522d] font-medium">
-                interactive craftsmanship
-              </span>{" "}
-              — I care as much about cognitive friction and accessibility standards as I do about design system consistency and delightful micro-interactions.
+              I am an <span className="text-[#d4844a] font-medium">Aspiring Software Engineer</span> and MCA student passionate about building scalable web applications, real-time networking systems, and robust backend APIs. My engineering practice focuses on designing multi-tenant SaaS applications, decoupled database architectures, and responsive full-stack interfaces.
             </p>
             <p
               className="text-muted-foreground text-base leading-7"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              With a background in Computer Applications, I bridge the gap between development and design, approaching user interfaces not just as styling, but as a strategic way to solve business and user needs through logical, structured problem-solving.
+              With a solid foundation in Computer Applications, Data Structures & Algorithms, and modern MERN stack development, I bridge the gap between user-centric frontend experiences and secure backend infrastructure. I prioritize writing clean, maintainable code, implementing tenant isolation boundaries, and engineering low-latency communication models.
             </p>
             <p
               className="text-muted-foreground text-base leading-7"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              When I&apos;m not sketching wireframes or building interactive prototypes, I&apos;m exploring emerging UI patterns, reading about behavioral psychology, or building personal design projects.
+              When I am not engineering full-stack applications like Acadexa or Socket.io real-time chat platforms, I actively solve algorithmic challenges on LeetCode and explore emerging AI-accelerated developer workflows. I am seeking an entry-level software development role where I can contribute strong problem-solving skills and grow within a fast-paced engineering team.
             </p>
-
-            <div className="flex gap-4 pt-2">
-              <a
-                href="https://github.com/anuragdutt36"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-[#d4844a] transition-colors group"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                <Github className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/anuragdutt36"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-[#d4844a] transition-colors group"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                <Linkedin className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                LinkedIn
-              </a>
-            </div>
           </div>
 
           {/* Skills */}
@@ -406,7 +375,7 @@ function AboutSection() {
               className="text-sm font-mono text-muted-foreground tracking-widest uppercase mb-6"
               style={{ fontFamily: "JetBrains Mono, monospace" }}
             >
-              Design Toolkit
+              Technical Skills
             </h3>
             <div className="flex flex-wrap gap-2.5">
               {SKILLS.map((skill, i) => (
@@ -463,7 +432,7 @@ function ProjectsSection() {
             className="text-3xl md:text-4xl font-black text-foreground"
             style={{ fontFamily: "Outfit, sans-serif" }}
           >
-            Selected Work
+            Featured Projects
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-[#a0522d]/30 to-transparent" />
         </div>
@@ -596,7 +565,7 @@ function ContactSection() {
             className="text-3xl md:text-4xl font-black text-foreground"
             style={{ fontFamily: "Outfit, sans-serif" }}
           >
-            Let&apos;s Collaborate
+            Let&apos;s Connect
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-[#d4844a]/30 to-transparent" />
         </div>
@@ -608,19 +577,19 @@ function ContactSection() {
               className="text-xl text-foreground/80 leading-relaxed mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Have a product vision, an interactive challenge, or just want to chat about user experience design? I&apos;m always open to new projects, collaborations, and discussions.
+              Seeking an entry-level software development role to contribute clean code, strong problem-solving skills, and AI-accelerated workflows. Feel free to reach out via email!
             </p>
 
             <div className="space-y-4 mb-10">
               <a
-                href="mailto:anuragdutt135790@outlook.com"
+                href="mailto:anuragdutt36@gmail.com"
                 className="flex items-center gap-3 text-muted-foreground hover:text-[#d4844a] transition-colors group"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 <div className="w-9 h-9 rounded-lg flex items-center justify-center border border-border group-hover:border-[#d4844a]/40 group-hover:bg-[#d4844a]/5 transition-all">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-sm">outlook.com/anuragdutt135790</span>
+                <span className="text-sm">anuragdutt36@gmail.com</span>
               </a>
               <a
                 href="https://github.com/anuragdutt36"
@@ -730,7 +699,7 @@ function ContactSection() {
               <textarea
                 rows={5}
                 name="message"
-                placeholder="Describe your product vision, timeline, or design challenges..."
+                placeholder="Describe your software opportunity or engineering discussion..."
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 required
@@ -761,16 +730,16 @@ function Footer() {
           className="text-sm text-muted-foreground"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
-          © 2026 Anurag Dutt. Designed with intent.
+          © 2026 Anurag Dutt. Aspiring Software Engineer.
         </span>
         <div
           className="flex items-center gap-1 text-xs text-muted-foreground font-mono"
           style={{ fontFamily: "JetBrains Mono, monospace" }}
         >
           <span className="text-[#d4844a]">const</span>
-          <span className="text-foreground ml-1">philosophy</span>
+          <span className="text-foreground ml-1">stack</span>
           <span className="text-muted-foreground ml-1">=</span>
-          <span className="text-[#a0522d] ml-1">&apos;human-centered&apos;</span>
+          <span className="text-[#a0522d] ml-1">&apos;MERN & Backend API&apos;</span>
           <span className="text-muted-foreground ml-0.5">;</span>
         </div>
       </div>
